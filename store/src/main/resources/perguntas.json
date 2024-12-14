@@ -1,27 +1,100 @@
-[
-  {
-    "pergunta": "Qual a capital do Brasil?",
-    "alternativas": ["São Paulo", "Brasília", "Rio de Janeiro", "Salvador"],
-    "respostaCorreta": "Brasília"
-  },
-  {
-    "pergunta": "Quem pintou a Mona Lisa?",
-    "alternativas": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
-    "respostaCorreta": "Leonardo da Vinci"
-  },
-  {
-    "pergunta": "Qual é o maior planeta do Sistema Solar?",
-    "alternativas": ["Terra", "Júpiter", "Saturno", "Netuno"],
-    "respostaCorreta": "Júpiter"
-  },
-  {
-    "pergunta": "Quem descobriu o Brasil?",
-    "alternativas": ["Pedro Álvares Cabral", "Cristóvão Colombo", "Vasco da Gama", "Fernão de Magalhães"],
-    "respostaCorreta": "Pedro Álvares Cabral"
-  },
-  {
-    "pergunta": "Qual é o símbolo químico da água?",
-    "alternativas": ["O2", "H2O", "CO2", "N2"],
-    "respostaCorreta": "H2O"
-  }
-]
+{
+  "perguntas": [
+    {
+      "id": 1,
+      "pergunta": "Qual é a capital do Brasil?",
+      "resposta_correta": "Brasília",
+      "alternativas_incorretas": ["Rio de Janeiro", "São Paulo", "Salvador"]
+    },
+    {
+      "id": 2,
+      "pergunta": "Quem pintou a Mona Lisa?",
+      "resposta_correta": "Leonardo da Vinci",
+      "alternativas_incorretas": ["Pablo Picasso", "Vincent van Gogh", "Michelangelo"]
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual é o maior planeta do nosso sistema solar?",
+      "resposta_correta": "Júpiter",
+      "alternativas_incorretas": ["Saturno", "Terra", "Marte"]
+    },
+    {
+      "id": 4,
+      "pergunta": "Em que ano o Brasil conquistou sua independência?",
+      "resposta_correta": "1822",
+      "alternativas_incorretas": ["1889", "1500", "1888"]
+    },
+    {
+      "id": 5,
+      "pergunta": "Qual é o símbolo químico do ouro?",
+      "resposta_correta": "Au",
+      "alternativas_incorretas": ["Ag", "Fe", "Cu"]
+    },
+    {
+      "id": 6,
+      "pergunta": "Quem escreveu 'Dom Casmurro'?",
+      "resposta_correta": "Machado de Assis",
+      "alternativas_incorretas": ["José de Alencar", "Raul Pompeia", "Clarice Lispector"]
+    },
+    {
+      "id": 7,
+      "pergunta": "Qual é o país mais populoso do mundo?",
+      "resposta_correta": "China",
+      "alternativas_incorretas": ["Índia", "Estados Unidos", "Brasil"]
+    },
+    {
+      "id": 8,
+      "pergunta": "Qual é o maior oceano do planeta?",
+      "resposta_correta": "Oceano Pacífico",
+      "alternativas_incorretas": ["Oceano Atlântico", "Oceano Índico", "Oceano Ártico"]
+    },
+    {
+      "id": 9,
+      "pergunta": "Quem foi o primeiro homem a pisar na Lua?",
+      "resposta_correta": "Neil Armstrong",
+      "alternativas_incorretas": ["Buzz Aldrin", "Yuri Gagarin", "Alan Shepard"]
+    },
+    {
+      "id": 10,
+      "pergunta": "Qual é a principal língua falada na Argentina?",
+      "resposta_correta": "Espanhol",
+      "alternativas_incorretas": ["Português", "Inglês", "Italiano"]
+    },
+    {
+      "id": 11,
+      "pergunta": "Quem é conhecido como o 'Rei do Pop'?",
+      "resposta_correta": "Michael Jackson",
+      "alternativas_incorretas": ["Elvis Presley", "Prince", "Madonna"]
+    },
+    {
+      "id": 12,
+      "pergunta": "Qual é a moeda oficial do Japão?",
+      "resposta_correta": "Iene",
+      "alternativas_incorretas": ["Dólar", "Euro", "Won"]
+    },
+    {
+      "id": 13,
+      "pergunta": "Quem descobriu a penicilina?",
+      "resposta_correta": "Alexander Fleming",
+      "alternativas_incorretas": ["Louis Pasteur", "Marie Curie", "Albert Einstein"]
+    },
+    {
+      "id": 14,
+      "pergunta": "Qual é a montanha mais alta do mundo?",
+      "resposta_correta": "Monte Everest",
+      "alternativas_incorretas": ["K2", "Monte Kilimanjaro", "Aconcágua"]
+    },
+    {
+      "id": 15,
+      "pergunta": "Em que continente está localizado o Egito?",
+      "resposta_correta": "África",
+      "alternativas_incorretas": ["Ásia", "Europa", "América"]
+    },
+    {
+      "id": 16,
+      "pergunta": "Qual é o maior rio do mundo em volume de água?",
+      "resposta_correta": "Rio Amazonas",
+      "alternativas_incorretas": ["Rio Nilo", "Rio Yangtze", "Rio Mississipi"]
+    }
+  ]
+}
