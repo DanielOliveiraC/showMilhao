@@ -1,0 +1,27 @@
+[
+  {
+    "pergunta": "Qual a capital do Brasil?",
+    "alternativas": ["São Paulo", "Brasília", "Rio de Janeiro", "Salvador"],
+    "respostaCorreta": "Brasília"
+  },
+  {
+    "pergunta": "Quem pintou a Mona Lisa?",
+    "alternativas": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+    "respostaCorreta": "Leonardo da Vinci"
+  },
+  {
+    "pergunta": "Qual é o maior planeta do Sistema Solar?",
+    "alternativas": ["Terra", "Júpiter", "Saturno", "Netuno"],
+    "respostaCorreta": "Júpiter"
+  },
+  {
+    "pergunta": "Quem descobriu o Brasil?",
+    "alternativas": ["Pedro Álvares Cabral", "Cristóvão Colombo", "Vasco da Gama", "Fernão de Magalhães"],
+    "respostaCorreta": "Pedro Álvares Cabral"
+  },
+  {
+    "pergunta": "Qual é o símbolo químico da água?",
+    "alternativas": ["O2", "H2O", "CO2", "N2"],
+    "respostaCorreta": "H2O"
+  }
+]

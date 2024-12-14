@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Milhão</title>
+</head>
+<body>
+<h1>Pergunta</h1>
+<p th:text="${pergunta.pergunta}"></p> <!-- Exibe a pergunta -->
+
+<form th:action="@{/resposta}" method="post">
+    <input type="hidden" name="index" th:value="${index}"> <!-- Passa o índice da pergunta -->
+
+    <!-- Alternativa A -->
+    <div>
+        <label for="alternativaA">
+            <input type="radio" id="alternativaA" name="resposta" th:value="'A'" th:text="${pergunta.alternativas[0]}"> <!-- A alternativa A -->
+        </label>
+    </div>
+
+    <!-- Alternativa B -->
+    <div>
+        <label for="alternativaB">
+            <input type="radio" id="alternativaB" name="resposta" th:value="'B'" th:text="${pergunta.alternativas[1]}"> <!-- A alternativa B -->
+        </label>
+    </div>
+
+    <!-- Alternativa C -->
+    <div>
+        <label for="alternativaC">
+            <input type="radio" id="alternativaC" name="resposta" th:value="'C'" th:text="${pergunta.alternativas[2]}"> <!-- A alternativa C -->
+        </label>
+    </div>
+
+    <!-- Alternativa D -->
+    <div>
+        <label for="alternativaD">
+            <input type="radio" id="alternativaD" name="resposta" th:value="'D'" th:text="${pergunta.alternativas[3]}"> <!-- A alternativa D -->
+        </label>
+    </div>
+
+    <button type="submit">Responder</button>
+</form>
+
+</body>
+</html>

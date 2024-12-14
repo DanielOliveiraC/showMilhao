@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo do Milhão - Início</title>
+  <style>
+    /* Estilo para a página */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #f77014;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #433d3d;
+    }
+
+    .main-content {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      background-color: #f77014;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      border-radius: 5px;
+      transition: 0.7s;
+    }
+
+    .btn:hover {
+      background-color: #e33c08;
+    }
+
+    .ranking {
+      margin-top: 50px;
+      text-align: left;
+    }
+
+    .ranking h3 {
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    .ranking-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-bottom: 100px;
+    }
+
+    .ranking-table th, .ranking-table td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    .ranking-table th {
+      background-color: #f77014;
+      color: white;
+    }
+
+    .ranking-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .ranking-table tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    footer {
+      background-color: #ffffff;
+      color: black;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+
+    }
+  </style>
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header>
+  <h1>Jogo do Milhão</h1>
+  <h2>Desafie-se e conquiste grandes prêmios!</h2>
+</header>
+
+<!-- Conteúdo Principal -->
+<div class="main-content">
+  <p>Bem-vindo ao Jogo do Milhão! Clique abaixo para iniciar sua jornada.</p>
+  <a class="btn" th:href="@{/login}">Iniciar Jogo</a>
+
+  <!-- Ranking das 10 maiores premiações -->
+  <div class="ranking">
+    <h1>Ranking das 10 Maiores Pontuações</h1>
+
+    <table>
+      <thead>
+      <tr>
+        <th>Posição</th>
+        <th>Jogador</th>
+        <th>Pontuação</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="pontuacao, iterStat : ${ranking}">
+        <td th:text="${iterStat.index + 1}"></td>
+        <td th:text="${pontuacao.jogador.nome}"></td>
+        <td th:text="${pontuacao.pontuacao}"></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>© 2024 Jogo do Milhão. Todos os direitos reservados.</p>
+    </footer>
+
+  </div>
+</div>
+</body>
+</html>
+

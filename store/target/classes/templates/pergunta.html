@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Milhão</title>
+</head>
+<body>
+<h1>Pergunta</h1>
+<p th:text="${pergunta.pergunta}"></p>
+
+<form th:action="@{/resposta}" method="post">
+    <input type="hidden" name="index" th:value="${index}"> <!-- Passa o índice da pergunta -->
+
+    <div>
+        <label>
+            <input type="radio" name="resposta" th:value="${pergunta.alternativas[0]}" th:text="${pergunta.alternativas[0]}">
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="resposta" th:value="${pergunta.alternativas[1]}" th:text="${pergunta.alternativas[1]}">
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="resposta" th:value="${pergunta.alternativas[2]}" th:text="${pergunta.alternativas[2]}">
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="resposta" th:value="${pergunta.alternativas[3]}" th:text="${pergunta.alternativas[3]}">
+        </label>
+    </div>
+    <button type="submit">Responder</button>
+</form>
+
+</body>
+</html>
